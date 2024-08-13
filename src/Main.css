@@ -1,0 +1,280 @@
+:root{
+    --fontT: 35px;
+    --fontP: 18px;
+
+}
+
+
+/*============ PADRAO 1024px ===========*/ /*============ PADRAO 1024px ===========*/ /*============ PADRAO 1024px ===========*/
+.CaixaP {
+    width: calc(100vw - 30px); /* Compensar a margem */
+    max-width: 100%;
+    height: 1500px;
+    margin: 0 auto; /* Centralizar a caixa */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: #EDCE7D;
+}
+
+
+.subCaixa{
+    background-color: black;
+    border-radius: 20px;
+    width: 95vw;
+    height: 425px;
+    box-shadow: 5px 5px 5px #F2DCA4;
+}
+
+/*----------- SUBCAIXA 1 ------------*/
+#subcaixa1{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "tt1 txt1"
+    "img2 txt1"
+    "img2 txt2"
+    "img2 txt2";
+}
+#img1pp1{
+    grid-area: img2;
+    height: 275px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+#tt1pp1{
+    grid-area: tt1;
+    font-size:  var(--fontT);
+    letter-spacing: 3px;
+    height: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+#txt1pp1{
+    grid-area: txt1;
+    padding: 0px 30px 0px 30px;
+    margin-top: 25px;
+    font-size: var(--fontP);
+}
+#txt2pp1{
+    grid-area: txt2;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 50px;
+    font-size: var(--fontP);
+}
+/*----------- SUBCAIXA 1 ------------*/
+
+/*----------- SUBCAIXA 2 ------------*/
+#subcaixa2{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 150px);
+    grid-template-areas: 
+    "txt1pp2 tt1pp2"
+    "txt2pp2 img2pp2";
+}
+#img2pp2{
+    grid-area: img2pp2;
+    height: 250px;
+    border-radius: 5%;
+}
+#tt1pp2{
+    grid-area: tt1pp2;
+    font-size:  var(--fontT);;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-top: 35px;
+}
+#txt1pp2{
+    grid-area: txt1pp2;
+    padding: 0px 30px 0px 30px;
+    margin-top: 25px;
+    font-size: var(--fontP);
+}
+#txt2pp2{
+    grid-area: txt2pp2;
+    padding: 0px 30px 0px 30px;
+    margin-top: 50px;
+    font-size: var(--fontP);
+}
+/*----------- SUBCAIXA 2 ------------*/
+
+/*----------- SUBCAIXA 3 ------------*/
+#subcaixa3{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "tt3 tt3"
+    "txt5 txt5"
+    "txt6 txt6"
+    "txt6 txt6";
+}
+
+#tt3pp3{
+    grid-area: tt3;
+    font-size:  var(--fontT);;
+    letter-spacing: 3px;
+    height: 25px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+#txt1pp3{
+    grid-area: txt5;
+    padding: 0px 30px 0px 30px;
+    margin-top: 25px;
+    font-size: var(--fontP);
+}
+#txt2pp3{
+    grid-area: txt6;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 50px;
+    font-size: var(--fontP);
+}
+/*----------- SUBCAIXA 3 ------------*/
+
+/*============ PADRAO 1024px FIM ===========*/ /*============ PADRAO 1024px FIM ===========*/ /*============ PADRAO 1024px FIM ===========*/
+
+/*============ PADRAO 1100+px ===========*//*============ PADRAO 1100+px ===========*//*============ PADRAO 1100+px ===========*/
+@media (min-width: 1440px){
+    :root{
+        --fontP: 23px;
+        --fontT: 45px;
+    }
+    .CaixaP{
+        height: 1775px;
+    }
+    .subCaixa{
+        height: 555px;
+    }
+
+    /*SUBCAIXA 1*/
+    #img1pp1{
+        grid-area: img2;
+        height: 350px;
+        margin-left: 25px;
+    }
+    /*SUBCAIXA 2*/
+    #subcaixa2{
+        grid-template-rows: 12rem 22.5rem;
+        grid-template-areas: 
+        "txt1pp2 tt1pp2"
+        "txt2pp2 img2";
+    }
+    #img2pp2{
+        grid-area: img2;
+        height: 350px;
+    }
+}
+/*============ PADRAO 1100+px FIM ===========*//*============ PADRAO 1100+px FIM ===========*//*============ PADRAO 1100+px FIM ===========*/
+
+/*============ PADRAO 768 - 1024px ===========*//*============ PADRAO 768 - 1024px ===========*/ /*============ PADRAO 768 - 1024px ===========*/
+@media (min-width: 768px) and (max-width: 1023px){
+    :root{
+        --fontP: 15px;
+        --fontT: 35px;
+    }
+    /*SUBCAIXA 1*/
+    #img1pp1{
+        grid-area: img2;
+        height: 200px;
+        margin-left: 25px;
+    }
+}/*============ PADRAO 768 - 1024px ===========*//*============ PADRAO 768 - 1024px ===========*/ /*============ PADRAO 768 - 1024px ===========*/
+
+/*============ PADRAO 320 - 767px ===========*//*============ PADRAO 320 - 767px ===========*//*============ PADRAO 320 - 767px ===========*/
+@media (min-width: 320px) and (max-width: 767px){
+    .main{
+        justify-items: center;
+    }
+    :root{
+        --fontP: 18px;
+        --fontT: 45px;
+    }
+    html,body, :root{
+        width: 320px;
+    }
+    .CaixaP{
+        width: 320px;
+        height: 2250px;
+        row-gap: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .subCaixa{
+        width: 350px;
+        height: 800px;
+    }
+
+        /*SUBCAIXA 1*/
+    #subcaixa1{
+        justify-items: center;
+        height: 750px;
+        display: grid;
+        grid-template-columns: 365px;
+        grid-template-rows: 105px 175px 225px 100px;
+        grid-template-areas: 
+        "tt1"
+        "img2"
+        "txt1"
+        "txt2";
+    }
+    #tt1pp1{
+        grid-area: tt1;
+        font-size:  35px;
+        height: 25px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    #img1pp1{
+        grid-area: img2;
+        height: 165px;
+        margin: 0;
+    }
+
+
+        /*SUBCAIXA 2*/
+    #subcaixa2{
+        justify-items: center;
+        height: 950px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px 275px 200px 100px;
+        grid-template-areas: 
+        "tt1pp2"
+        "txt1pp2"
+        "img2pp2"
+        "txt2pp2";
+    }
+    #img2pp2{
+        grid-area: img2pp2;
+        height: 225px;
+        border-radius: 5%;
+        margin: 0;
+    }
+    #tt1pp2{
+        margin: 0;
+        padding: 15px;
+        font-size: 40px;
+    }
+
+        /*SUBCAIXA 3*/
+    #subcaixa3{
+        height: 875px;
+        grid-template-rows: 100px 200px 200px;
+    }
+    #tt3pp3{
+        grid-area: tt3;
+        font-size:  var(--fontT);;
+        letter-spacing: 3px;
+        height: 25px;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+/*============ PADRAO 320 - 767px ===========*//*============ PADRAO 320 - 767px ===========*//*============ PADRAO 320 - 767px ===========*/

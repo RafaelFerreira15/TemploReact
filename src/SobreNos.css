@@ -1,0 +1,70 @@
+.CaixaP3{
+    width: 97vw;
+    height: 1250px;
+    margin: 0px 10px 0px 10px;
+    justify-items: center;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 650px 400px;
+    grid-template-areas: 
+    "Cs Qs"
+    "Fts Fts";
+}
+.SubcaixaSN{
+    background-color: black;
+    border-radius: 20px;
+    width: 450px;
+    height: 600px;
+    box-shadow: 5px 5px 5px #F2DCA4;
+    color: #EDCE7D;
+}
+/*--------- SUBCAIXA 1 ----------*/
+#sub1sn{
+    grid-area: Cs;
+    margin-top: 30px;
+}
+#tt1sn1{
+    font-size: 30px;
+    padding: 0px 20px 0px 125px;
+}
+#txt1sn1{
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+}
+/*--------- SUBCAIXA 1 ----------*/
+
+/*--------- SUBCAIXA 2 ----------*/
+#sub2sn{
+    grid-area: Qs;
+    margin-top: 30px;
+}
+#tt1sn2{
+    font-size: 30px;
+    padding: 0px 20px 0px 125px;
+}
+#txt1sn2{
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+}
+/*--------- SUBCAIXA 2 ----------*/
+
+/*--------- SUBCAIXA 3 ----------*/
+#sub3sn{
+    grid-area: Fts;
+    width: 950px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.FTs{
+    padding: 20px 20px 0px 20px;
+}
+.PFs{
+    width: 150px;
+    border-radius: 10px;
+}
+.ttsn3{
+    padding-left: 25px;
+}
+/*--------- SUBCAIXA 3 ----------*/

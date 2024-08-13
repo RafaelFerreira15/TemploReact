@@ -1,0 +1,17 @@
+html, body, #root{
+  width: 98vw;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: #EDCE7D;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #EDCE7D 10px ), repeating-linear-gradient( #83672155, #836721 );
+  
+}
+

@@ -1,0 +1,55 @@
+.CaixaP2{
+    width: 97vw;
+    height: 650px;
+    margin: 0px 10px 0px 10px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.SubcaixaVs{
+    background-color: black;
+    border-radius: 20px;
+    width: 300px;
+    height: 535px;
+    box-shadow: 5px 5px 5px #F2DCA4;
+    color: #EDCE7D;
+}
+
+/*--------- SUBCAIXA 1 ----------*/
+#caixa1vs{
+    display: flex;
+    flex-direction: column;
+}
+#tt1vs1{
+    padding-left: 25px;
+    font-size: 50px;
+}
+#img1vs1{
+    width: 250px;
+    height: 250px;
+    padding-left: 25px;
+}
+/*--------- SUBCAIXA 1 ----------*/
+
+/*--------- SUBCAIXA 2 ----------*/
+#tt1vs2{
+    font-size: 35px;
+    padding: 0px 20px 0px 20px;
+}
+#txt1vs2{
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+}
+/*--------- SUBCAIXA 2 ----------*/
+
+/*--------- SUBCAIXA 3 ----------*/
+#tt1vs3{
+    font-size: 35px;
+    padding: 0px 20px 0px 20px;
+}
+#txt1vs3{
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+}
+/*--------- SUBCAIXA 3 ----------*/

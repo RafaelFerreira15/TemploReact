@@ -1,0 +1,207 @@
+.CaixaP1{
+    width: 97vw;
+    height: 1800px;
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "subrm1 subrm4 subrm4"
+    "subrm5 subrm5 subrm2"
+    "subrm3 subrm6 subrm6";
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+.subcaixarm{
+    background-color: black;
+    border-radius: 20px;
+    width: 63vw;
+    height: 475px;
+    box-shadow: 5px 5px 5px #F2DCA4;
+    color: #EDCE7D;
+}
+
+/*--------- SUBCAIXA 1 ----------*/
+#sub1{
+    grid-area: subrm1;
+    width: 275px;
+    margin-right: 25px;
+}
+#tt1rm1{
+    font-size: 24px;
+    padding: 0px 15px 0px 15px;
+}
+#txt1rm1{
+    font-size: 16px;
+    padding: 0px 15px 20px 15px;
+}
+#txt2rm1{
+    font-size: 16px;
+    padding: 0px 20px 0px 20px;
+}
+/*--------- SUBCAIXA 1 ----------*/
+
+/*--------- SUBCAIXA 4 ----------*/
+#sub4{
+    grid-area: subrm4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.25fr 1.25fr;
+    grid-template-areas: 
+    "img1rm tt tt"
+    "img1rm txt1sub1 txt1sub1"
+    "txt2sub1 txt2sub1 txt2sub1";
+}
+#tt1rm4{
+    grid-area: tt;
+    padding-left: 6px;
+    font-size: 30px;
+}
+#imgrm1{
+    border-radius: 15%;
+    grid-area: img1rm;
+    margin-top: 65px;
+    padding: 0px 20px 0px 20px;
+    width: 275px;
+    height: 200px;
+}
+#txt1rm4{
+    grid-area: txt1sub1;
+    padding: 0px 10px 0px 20px;
+}
+#txt2rm4{
+    grid-area: txt2sub1;
+    padding: 0px 20px 0px 20px;
+    font-size: 17px;
+    margin-top: 25px;
+}
+/*--------- SUBCAIXA 4 ----------*/
+
+/*--------- SUBCAIXA 5 ----------*/
+#sub5{
+    grid-area: subrm5;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 0.2fr 1fr 0.8fr;
+    grid-template-areas: 
+    "txt1sub5 ttsub5"
+    "txt2sub5 img2rm"
+    "txt3sub5 txt4sub5";
+}
+#tt1rm5{
+    padding: 30px 10px 0px 15px;
+    font-size: 30px;
+    grid-area: ttsub5;
+}
+#img2rm{
+    border-radius: 15%;
+    padding: 0px 10px 0px 15px;
+    width: 325px;
+    height: 200px;
+    grid-area: img2rm;
+}
+#txt1rm5{
+    margin-top: 25px;
+    padding: 0px 20px 0px 20px;
+    font-size: 14px;
+    grid-area: txt1sub5;
+}
+#txt2rm5{
+    margin-top: 15px;
+    padding: 0px 20px 0px 20px;
+    font-size: 17px;
+    grid-area: txt2sub5;
+    font-weight: 750;
+}
+#txt3rm5{
+    padding: 0px 9px 0px 15px;
+    font-size: 14px;
+    grid-area: txt3sub5;
+}
+#txt4rm5{
+    margin-top: 5px;
+    padding: 0px 20px 0px 20px;
+    font-size: 14px;
+    grid-area: txt4sub5;
+}
+/*--------- SUBCAIXA 5 ----------*/
+
+/*--------- SUBCAIXA 2 ----------*/
+#sub2{
+    grid-area: subrm2;
+    width: 275px;
+    margin-left: 25px;
+}
+#tt1rm2{
+    padding: 0px 10px 0px 20px;
+    font-size: 25px;
+}
+#txt1rm2{
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+}
+#txt2rm2{
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+}
+#txt3rm2{
+    padding: 0px 10px 0px 10px;
+    font-size: 14px;
+}
+/*--------- SUBCAIXA 2 ----------*/
+
+/*--------- SUBCAIXA 3 ----------*/
+#sub3{
+    grid-area: subrm3;
+    width: 275px;
+    margin-right: 25px;
+}
+#tt1rm3{
+    padding: 0px 10px 0px 40px;
+    font-size: 40px;
+}
+#txt1rm3{
+    padding: 25px 30px 0px 30px;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+/*--------- SUBCAIXA 3 ----------*/
+
+/*--------- SUBCAIXA 6 ----------*/
+#sub6{
+    grid-area: subrm6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr;
+    grid-template-areas: 
+    "ttt1 txt1sub6"
+    "img3rm txt2sub6"
+
+}
+#tt1rm6{
+    margin-top: 45px;
+    padding: 0px 10px 0px 25px;
+    font-size: 37px;
+    grid-area: ttt1;
+}
+#img3rm{
+    border-radius: 15%;
+    grid-area: img3rm;
+    padding: 0px 10px 0px 25px;
+}
+#txt1rm6{
+    margin-top: 45px;
+    padding: 0px 25px 0px 25px;
+    font-size: 15px;
+    grid-area: txt1sub6;
+}
+#txt2rm6{    
+    margin-top: 45px;
+    padding: 0px 25px 0px 25px;
+    font-size: 15px;
+    grid-area: txt2sub6;
+}
+/*--------- SUBCAIXA 6 ----------*/

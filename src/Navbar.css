@@ -1,0 +1,122 @@
+/*Tom mais escuro: #A59057
+Tom padrão: #EDCE7D
+Tom mais claro: #F2DCA4
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100vw;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+}
+
+#Titulo{
+    margin: 0;
+    color: #EDCE7D;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+
+
+#caixa2{
+    padding-right: 20px;
+}
+
+.Redirecionandos{
+    text-decoration: none;
+    color: #EDCE7D;
+    padding: 10px;
+    transition: 250ms linear;
+}
+
+.Redirecionandos:hover{
+    font-size: 20px;
+    text-shadow: 3px 3px 9px #F2DCA4;
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: #EDCE7D;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Inicialmente escondido */
+}
+
+.menuLinks {
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: black;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 380px) {
+    .nav{
+        width: 380px;
+    }
+}
+@media (max-width: 768px) {
+    #Titulo {
+        text-align: center;
+    }
+
+    .menuButton {
+        display: block; /* Mostrar o botão de menu */
+    }
+
+    .menuLinks {
+        display: flex; /* Mostrar links em coluna */
+    }
+
+    #Originais{
+        display: none;
+    }
+
+}
+
+@media (min-width: 769px) {
+    #caixa2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menuButton {
+        display: none; /* Esconder o botão de menu */
+    }
+
+    .menuLinks {
+        display: flex; /* Mostrar links em linha */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        border-radius: 0;
+        padding: 0;
+    }
+}
